@@ -3,6 +3,10 @@ import { useState } from "react";
 export default function State(){
 
     let[count, setCount] = useState(0) // initialization 
+
+    console.log("initial state rendered") // output of var in initial stage then increase by every click
+    console.log("Count is: ", count) // variable count is rendered in this formate 
+    
     let inState=()=> {
         setCount(count += 1);
        // console.log(count);
