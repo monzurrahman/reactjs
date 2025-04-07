@@ -2,7 +2,7 @@
 import { useState } from "react";
 export default function State(){
 
-    let[count, setCount] = useState(0)
+    let[count, setCount] = useState(0) // initialization 
     let inState=()=> {
         setCount(count += 1);
        // console.log(count);
