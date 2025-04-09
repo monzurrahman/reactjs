@@ -8,7 +8,7 @@ function Random(){
 
 export default function State(){
 
-    let[count, setCount]= useState(Random())
+    let[count, setCount]= useState(Random()) // if we use Random only instead of Random() then console.log= "Random funciton executed" will display once 
     let inState=()=>{
         setCount((currentVal)=>{
             return currentVal +1;
